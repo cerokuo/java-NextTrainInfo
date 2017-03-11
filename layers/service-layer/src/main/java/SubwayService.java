@@ -1,3 +1,5 @@
+import java.security.InvalidParameterException;
+
 /**
  * Created by cerokuo on 09/03/2017.
  */
@@ -9,5 +11,5 @@ public interface SubwayService {
      * @return
      */
 
-    String getNextTrainTime(TrainQueryParams params);
+    String getNextTrainTime(TrainQueryParams params) throws InvalidParameterException;
 }

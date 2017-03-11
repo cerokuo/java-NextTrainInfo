@@ -22,16 +22,14 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
-        <module name="control-layer" />
         <module name="model-layer" />
         <module name="ProofPointTrainInfo" />
         <module name="service-layer" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="control-layer" target="1.5" />
+    <bytecodeTargetLevel target="1.8">
+      <module name="control-layer" target="1.8" />
       <module name="model-layer" target="1.5" />
-      <module name="proofPointsTrainInfo-ejb" target="1.5" />
       <module name="ProofPointTrainInfo" target="1.5" />
       <module name="service-layer" target="1.6" />
     </bytecodeTargetLevel>

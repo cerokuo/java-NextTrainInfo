@@ -41,6 +41,7 @@ public class SubwayServiceImplTest {
         Map<String, Map<String, List<LocalTime>>> scheduleInfo = new HashMap<String, Map<String, List<LocalTime>>>();
         Map<String, List<LocalTime>> directionAndTime = new HashMap<String, List<LocalTime>>();
 
+
         ArrayList<LocalTime> times = new ArrayList<LocalTime>();
         times.add(LocalTime.of(11, 15, 00));
         times.add(LocalTime.of(12, 15, 00));
@@ -74,11 +75,11 @@ public class SubwayServiceImplTest {
 
     }
 
-    public void getInfoNextTrainWithOutTimeTest() {
+    public void getInfoNextTrainNoTimeTest() {
         assertEquals(subwayServiceImpl.getNextTrainTime(paramsWithOutTime), SubwayUtils.getTimeFormated(LocalTime.of(23, 01, 00)));
     }
 
-    public void getInfoNextTrainWithTimeTest() {
+    public void getInfoNextTrainWithSpecificTimeTest() {
         assertEquals(subwayServiceImpl.getNextTrainTime(paramsWithTime), SubwayUtils.getTimeFormated(LocalTime.of(15, 22, 00)));
     }
 
@@ -92,18 +93,18 @@ public class SubwayServiceImplTest {
         assertEquals(subwayServiceImpl.getNextTrainTime(paramsWithTime), SubwayUtils.getTimeFormated(LocalTime.of(11, 15, 00)));
     }
     @Test(expectedExceptions = InvalidParameterException.class)
-    public void getInfoNextTrainNonExistedStationTest(){
+    public void getInfoNextTrainNonExistingStationTest(){
         TrainQueryParams paramsWithOutStationName = generateParams(Direction.SOUTH.toString(), LINE_NAME, "", 00, 55, 00);
         subwayServiceImpl.getNextTrainTime(paramsWithOutStationName);
     }
 
     @Test(expectedExceptions = InvalidParameterException.class)
-    public void getInfoNextTrainNoCorrectDirectionTest() {
+    public void getInfoNextTrainIncorrectDirectionTest() {
         TrainQueryParams paramsWithoutDirection = generateParams("", LINE_NAME, STATION_NAME, 00, 55, 00);
         subwayServiceImpl.getNextTrainTime(paramsWithoutDirection);
     }
     @Test(expectedExceptions = InvalidParameterException.class)
-    public void getInfoNextTrainNoCorrectLineTest() {
+    public void getInfoNextTrainIncorrectLineTest(){
         TrainQueryParams paramsWithOutLineName = generateParams(Direction.SOUTH.toString(), "", STATION_NAME, 00, 55, 00);
         subwayServiceImpl.getNextTrainTime(paramsWithOutLineName);
     }

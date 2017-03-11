@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="module_proofpointtraininfo" default="compile.module.proofpointtraininfo">
+  <dirname property="module.proofpointtraininfo.basedir" file="${ant.file.module_proofpointtraininfo}"/>
+  
+  <property name="module.jdk.home.proofpointtraininfo" value="${project.jdk.home}"/>
+  <property name="module.jdk.bin.proofpointtraininfo" value="${project.jdk.bin}"/>
+  <property name="module.jdk.classpath.proofpointtraininfo" value="${project.jdk.classpath}"/>
+  
+  <property name="compiler.args.proofpointtraininfo" value="-encoding UTF-8 -source 1.6 -target 1.8 ${compiler.args}"/>
+  
+  <property name="proofpointtraininfo.output.dir" value="${module.proofpointtraininfo.basedir}/target/classes"/>
+  <property name="proofpointtraininfo.testoutput.dir" value="${module.proofpointtraininfo.basedir}/target/test-classes"/>
+  
+  <path id="proofpointtraininfo.module.bootclasspath">
+    <!-- Paths to be included in compilation bootclasspath -->
+  </path>
+  
+  <path id="proofpointtraininfo.module.production.classpath">
+    <path refid="${module.jdk.classpath.proofpointtraininfo}"/>
+    <path refid="library.maven:_com.google.inject:guice:4.1.0.classpath"/>
+    <path refid="library.maven:_javax.inject:javax.inject:1.classpath"/>
+    <path refid="library.maven:_aopalliance:aopalliance:1.0.classpath"/>
+    <path refid="library.maven:_com.google.guava:guava:19.0.classpath"/>
+  </path>
+  
+  <path id="proofpointtraininfo.runtime.production.module.classpath">
+    <pathelement location="${proofpointtraininfo.output.dir}"/>
+    <path refid="library.maven:_org.mockito:mockito-core:2.7.14.classpath"/>
+    <path refid="library.maven:_net.bytebuddy:byte-buddy:1.6.9.classpath"/>
+    <path refid="library.maven:_net.bytebuddy:byte-buddy-agent:1.6.9.classpath"/>
+    <path refid="library.maven:_org.objenesis:objenesis:2.5.classpath"/>
+    <path refid="library.maven:_net.bytebuddy:byte-buddy-android:1.6.5.classpath"/>
+    <path refid="library.maven:_com.jakewharton.android.repackaged:dalvik-dx:1.classpath"/>
+    <path refid="library.maven:_com.jakewharton.android.repackaged:libcore-dex:2.classpath"/>
+    <path refid="library.maven:_com.google.inject:guice:4.1.0.classpath"/>
+    <path refid="library.maven:_javax.inject:javax.inject:1.classpath"/>
+    <path refid="library.maven:_aopalliance:aopalliance:1.0.classpath"/>
+    <path refid="library.maven:_com.google.guava:guava:19.0.classpath"/>
+  </path>
+  
+  <path id="proofpointtraininfo.module.classpath">
+    <path refid="${module.jdk.classpath.proofpointtraininfo}"/>
+    <pathelement location="${proofpointtraininfo.output.dir}"/>
+    <path refid="library.maven:_org.testng:testng:6.9.13.6.classpath"/>
+    <path refid="library.maven:_com.beust:jcommander:1.48.classpath"/>
+    <path refid="library.maven:_org.apache.ant:ant:1.9.7.classpath"/>
+    <path refid="library.maven:_org.apache.ant:ant-launcher:1.9.7.classpath"/>
+    <path refid="library.maven:_org.beanshell:bsh:2.0b4.classpath"/>
+    <path refid="library.maven:_org.mockito:mockito-core:2.7.14.classpath"/>
+    <path refid="library.maven:_net.bytebuddy:byte-buddy:1.6.9.classpath"/>
+    <path refid="library.maven:_net.bytebuddy:byte-buddy-agent:1.6.9.classpath"/>
+    <path refid="library.maven:_org.objenesis:objenesis:2.5.classpath"/>
+    <path refid="library.maven:_net.bytebuddy:byte-buddy-android:1.6.5.classpath"/>
+    <path refid="library.maven:_com.jakewharton.android.repackaged:dalvik-dx:1.classpath"/>
+    <path refid="library.maven:_com.jakewharton.android.repackaged:libcore-dex:2.classpath"/>
+    <path refid="library.maven:_com.google.inject:guice:4.1.0.classpath"/>
+    <path refid="library.maven:_javax.inject:javax.inject:1.classpath"/>
+    <path refid="library.maven:_aopalliance:aopalliance:1.0.classpath"/>
+    <path refid="library.maven:_com.google.guava:guava:19.0.classpath"/>
+  </path>
+  
+  <path id="proofpointtraininfo.runtime.module.classpath">
+    <pathelement location="${proofpointtraininfo.testoutput.dir}"/>
+    <pathelement location="${proofpointtraininfo.output.dir}"/>
+    <path refid="library.maven:_org.testng:testng:6.9.13.6.classpath"/>
+    <path refid="library.maven:_com.beust:jcommander:1.48.classpath"/>
+    <path refid="library.maven:_org.apache.ant:ant:1.9.7.classpath"/>
+    <path refid="library.maven:_org.apache.ant:ant-launcher:1.9.7.classpath"/>
+    <path refid="library.maven:_org.beanshell:bsh:2.0b4.classpath"/>
+    <path refid="library.maven:_org.mockito:mockito-core:2.7.14.classpath"/>
+    <path refid="library.maven:_net.bytebuddy:byte-buddy:1.6.9.classpath"/>
+    <path refid="library.maven:_net.bytebuddy:byte-buddy-agent:1.6.9.classpath"/>
+    <path refid="library.maven:_org.objenesis:objenesis:2.5.classpath"/>
+    <path refid="library.maven:_net.bytebuddy:byte-buddy-android:1.6.5.classpath"/>
+    <path refid="library.maven:_com.jakewharton.android.repackaged:dalvik-dx:1.classpath"/>
+    <path refid="library.maven:_com.jakewharton.android.repackaged:libcore-dex:2.classpath"/>
+    <path refid="library.maven:_com.google.inject:guice:4.1.0.classpath"/>
+    <path refid="library.maven:_javax.inject:javax.inject:1.classpath"/>
+    <path refid="library.maven:_aopalliance:aopalliance:1.0.classpath"/>
+    <path refid="library.maven:_com.google.guava:guava:19.0.classpath"/>
+  </path>
+  
+  
+  <patternset id="excluded.from.module.proofpointtraininfo">
+    <patternset refid="ignored.files"/>
+  </patternset>
+  
+  <patternset id="excluded.from.compilation.proofpointtraininfo">
+    <patternset refid="excluded.from.module.proofpointtraininfo"/>
+  </patternset>
+  
+  <path id="proofpointtraininfo.module.sourcepath">
+    <dirset dir="${module.proofpointtraininfo.basedir}">
+      <include name="src/main/java"/>
+      <include name="src/main/resources"/>
+    </dirset>
+  </path>
+  
+  <path id="proofpointtraininfo.module.test.sourcepath">
+    <dirset dir="${module.proofpointtraininfo.basedir}">
+      <include name="src/test/java"/>
+    </dirset>
+  </path>
+  
+  
+  <target name="compile.module.proofpointtraininfo" depends="compile.module.proofpointtraininfo.production,compile.module.proofpointtraininfo.tests" description="Compile module ProofPointTrainInfo"/>
+  
+  <target name="compile.module.proofpointtraininfo.production" depends="register.custom.compilers" description="Compile module ProofPointTrainInfo; production classes">
+    <mkdir dir="${proofpointtraininfo.output.dir}"/>
+    <javac2 destdir="${proofpointtraininfo.output.dir}" debug="${compiler.debug}" nowarn="${compiler.generate.no.warnings}" memorymaximumsize="${compiler.max.memory}" fork="true" executable="${module.jdk.bin.proofpointtraininfo}/javac">
+      <compilerarg line="${compiler.args.proofpointtraininfo}"/>
+      <bootclasspath refid="proofpointtraininfo.module.bootclasspath"/>
+      <classpath refid="proofpointtraininfo.module.production.classpath"/>
+      <src refid="proofpointtraininfo.module.sourcepath"/>
+      <patternset refid="excluded.from.compilation.proofpointtraininfo"/>
+    </javac2>
+    
+    <copy todir="${proofpointtraininfo.output.dir}">
+      <fileset dir="${module.proofpointtraininfo.basedir}/src/main/java">
+        <patternset refid="compiler.resources"/>
+        <type type="file"/>
+      </fileset>
+      <fileset dir="${module.proofpointtraininfo.basedir}/src/main/resources">
+        <patternset refid="compiler.resources"/>
+        <type type="file"/>
+      </fileset>
+    </copy>
+  </target>
+  
+  <target name="compile.module.proofpointtraininfo.tests" depends="register.custom.compilers,compile.module.proofpointtraininfo.production" description="compile module ProofPointTrainInfo; test classes" unless="skip.tests">
+    <mkdir dir="${proofpointtraininfo.testoutput.dir}"/>
+    <javac2 destdir="${proofpointtraininfo.testoutput.dir}" debug="${compiler.debug}" nowarn="${compiler.generate.no.warnings}" memorymaximumsize="${compiler.max.memory}" fork="true" executable="${module.jdk.bin.proofpointtraininfo}/javac">
+      <compilerarg line="${compiler.args.proofpointtraininfo}"/>
+      <bootclasspath refid="proofpointtraininfo.module.bootclasspath"/>
+      <classpath refid="proofpointtraininfo.module.classpath"/>
+      <src refid="proofpointtraininfo.module.test.sourcepath"/>
+      <patternset refid="excluded.from.compilation.proofpointtraininfo"/>
+    </javac2>
+    
+    <copy todir="${proofpointtraininfo.testoutput.dir}">
+      <fileset dir="${module.proofpointtraininfo.basedir}/src/test/java">
+        <patternset refid="compiler.resources"/>
+        <type type="file"/>
+      </fileset>
+    </copy>
+  </target>
+  
+  <target name="clean.module.proofpointtraininfo" description="cleanup module">
+    <delete dir="${proofpointtraininfo.output.dir}"/>
+    <delete dir="${proofpointtraininfo.testoutput.dir}"/>
+  </target>
+</project>

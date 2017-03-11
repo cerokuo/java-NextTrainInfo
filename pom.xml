@@ -10,7 +10,6 @@
 
     <modules>
         <module>layers/model-layer</module>
-        <module>layers/control-layer</module>
         <module>layers/service-layer</module>
     </modules>
 
@@ -34,6 +33,7 @@
             <artifactId>guice</artifactId>
             <version>4.1.0</version>
         </dependency>
+
 
     </dependencies>
 </project>
