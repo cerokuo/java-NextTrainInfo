@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/ProofPointTrainInfo.iml" filepath="$PROJECT_DIR$/ProofPointTrainInfo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/layers/control-layer/control-layer.iml" filepath="$PROJECT_DIR$/layers/control-layer/control-layer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/layers/model-layer/model-layer.iml" filepath="$PROJECT_DIR$/layers/model-layer/model-layer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/layers/service-layer/service-layer.iml" filepath="$PROJECT_DIR$/layers/service-layer/service-layer.iml" />
+    </modules>
+  </component>
+</project>
