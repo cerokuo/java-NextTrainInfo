@@ -1,0 +1,22 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="ProofPointTrainInfo:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/ProofPointTrainInfo_jar</output-path>
+    <root id="archive" name="ProofPointTrainInfo.jar">
+      <element id="module-output" name="ProofPointTrainInfo" />
+      <element id="module-output" name="service-layer" />
+      <element id="module-output" name="model-layer" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/com/jakewharton/android/repackaged/libcore-dex/2/libcore-dex-2.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/net/bytebuddy/byte-buddy-android/1.6.5/byte-buddy-android-1.6.5.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/objenesis/objenesis/2.5/objenesis-2.5.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/com/jakewharton/android/repackaged/dalvik-dx/1/dalvik-dx-1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/mockito/mockito-core/2.7.14/mockito-core-2.7.14.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/javax/ws/rs/javax.ws.rs-api/2.0/javax.ws.rs-api-2.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/aopalliance/aopalliance/1.0/aopalliance-1.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/net/bytebuddy/byte-buddy-agent/1.6.9/byte-buddy-agent-1.6.9.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/javax/inject/javax.inject/1/javax.inject-1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/com/google/guava/guava/19.0/guava-19.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/net/bytebuddy/byte-buddy/1.6.9/byte-buddy-1.6.9.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/com/google/inject/guice/4.1.0/guice-4.1.0.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>

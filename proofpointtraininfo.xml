@@ -173,7 +173,7 @@
   
   <!-- Modules -->
   
-  <import file="${basedir}/layers/control-layer/module_control-layer.xml"/>
+  <import file="${basedir}/layers/control-layers/module_control-layer.xml"/>
   
   <import file="${basedir}/layers/model-layer/module_model-layer.xml"/>
   
