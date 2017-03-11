@@ -1,4 +1,4 @@
-package Utils;
+package com.subway.got.Utils;
 
 import java.time.LocalTime;
 import java.time.format.DateTimeFormatter;

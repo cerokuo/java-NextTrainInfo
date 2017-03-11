@@ -1,5 +1,7 @@
-import Utils.SubwayUtils;
+package com.subway.got;
+
 import com.google.inject.Inject;
+import com.subway.got.Utils.SubwayUtils;
 
 import java.security.InvalidParameterException;
 import java.time.LocalTime;

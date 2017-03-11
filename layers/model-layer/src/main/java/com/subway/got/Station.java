@@ -1,3 +1,5 @@
+package com.subway.got;
+
 import java.time.LocalTime;
 import java.util.List;
 import java.util.Map;
@@ -52,7 +54,7 @@ public class Station {
 
     @Override
     public String toString() {
-        return "Station{" +
+        return "com.subway.got.Station{" +
                 "name='" + stationName + '\'' +
                 ", infoStations=" + infoStation +
                 '}';

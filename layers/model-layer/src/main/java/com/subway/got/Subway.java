@@ -1,3 +1,5 @@
+package com.subway.got;
+
 import java.util.HashMap;
 import java.util.Map;
 
@@ -59,7 +61,7 @@ public class Subway {
 
     @Override
     public String toString() {
-        return "Subway{" +
+        return "com.subway.got.Subway{" +
                 "name='" + subwayName + '\'' +
                 ", linesStations=" + linesStations +
                 ", stations=" + stations +

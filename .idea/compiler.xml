@@ -28,7 +28,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="1.8">
-      <module name="control-layer" target="1.8" />
+      <module name="control-layer" target="1.5" />
       <module name="model-layer" target="1.5" />
       <module name="ProofPointTrainInfo" target="1.5" />
       <module name="service-layer" target="1.6" />

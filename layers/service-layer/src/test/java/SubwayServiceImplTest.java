@@ -1,4 +1,5 @@
-import Utils.SubwayUtils;
+import com.subway.got.*;
+import com.subway.got.Utils.SubwayUtils;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
 import org.testng.annotations.BeforeMethod;
@@ -62,7 +63,7 @@ public class SubwayServiceImplTest {
         station.setInfoStation(scheduleInfo);
 
 
-        paramsWithTime = generateParams(Direction.NORTH.toString(), LINE_NAME, STATION_NAME, 12, 50, 00);
+        paramsWithTime = generateParams(Direction.NORTH.toString(), LINE_NAME, STATION_NAME, 16, 00, 00);
 
         paramsWithOutTime = new TrainQueryParams.TrainQueryParamsBuilder()
                 .direction(Direction.SOUTH.toString())
@@ -80,7 +81,7 @@ public class SubwayServiceImplTest {
     }
 
     public void getInfoNextTrainWithSpecificTimeTest() {
-        assertEquals(subwayServiceImpl.getNextTrainTime(paramsWithTime), SubwayUtils.getTimeFormated(LocalTime.of(15, 22, 00)));
+        assertEquals(subwayServiceImpl.getNextTrainTime(paramsWithTime), SubwayUtils.getTimeFormated(LocalTime.of(23, 01, 00)));
     }
 
     public void getInfoNextTrainSameTimeAsScheduleTest() {

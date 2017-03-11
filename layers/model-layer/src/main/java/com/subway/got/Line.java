@@ -1,3 +1,5 @@
+package com.subway.got;
+
 import java.util.List;
 import java.util.Map;
 
@@ -6,10 +8,9 @@ import java.util.Map;
  */
 public class Line {
 
-    //line name, listofStations
     private String lineName;
 
-    //direction, stations
+    //<direction, stations>
     private Map<String, List<String>> linesStations;
 
 
@@ -46,7 +47,7 @@ public class Line {
 
     @Override
     public String toString() {
-        return "Line{" +
+        return "com.subway.got.Line{" +
                 "name='" + lineName + '\'' +
                 ", linesStations=" + linesStations +
                 '}';

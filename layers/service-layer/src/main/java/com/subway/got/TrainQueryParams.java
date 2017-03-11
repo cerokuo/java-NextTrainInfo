@@ -1,3 +1,5 @@
+package com.subway.got;
+
 import java.time.LocalTime;
 import java.util.Optional;
 

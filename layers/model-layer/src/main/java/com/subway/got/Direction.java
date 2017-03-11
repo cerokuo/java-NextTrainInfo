@@ -1,3 +1,5 @@
+package com.subway.got;
+
 /**
  * Created by cerokuo on 10/03/2017.
  */
